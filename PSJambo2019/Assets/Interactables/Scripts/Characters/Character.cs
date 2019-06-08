@@ -8,18 +8,18 @@ public delegate void Behavior();
 
 public class Character : MonoBehaviour
 {
-    Animator anim;
-    NavMeshAgent agent;
-    HeadController hc;
-    Rigidbody rb;
-    Rotator rotator;
+    protected Animator anim;
+    protected NavMeshAgent agent;
+    protected HeadController hc;
+    protected Rigidbody rb;
+    protected Rotator rotator;
 
     public Behavior behavior;
 
     float turn_speed = 5f;
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         rotator = GetComponentInChildren<Rotator>();
         anim = GetComponentInChildren<Animator>();
@@ -35,13 +35,13 @@ public class Character : MonoBehaviour
         behavior?.Invoke();
     }
 
-    void Stop()
+    protected void Stop()
     {
         agent.isStopped = true;
         behavior = null;
     }
 
-    void TurnTo(Transform t)
+    protected void TurnTo(Transform t)
     {
         hc.BeginLookAt(t.gameObject);
         rotator.TurnTo(t.gameObject, lockY:false);
