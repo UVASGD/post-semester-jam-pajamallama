@@ -16,6 +16,8 @@ namespace Fungus
         protected AudioSource audioSourceAmbiance;
         protected AudioSource audioSourceSoundEffect;
 
+        public static MusicManager instance;
+
         void Reset()
         {
             int audioSourceCount = this.GetComponents<AudioSource>().Length;
@@ -26,6 +28,16 @@ namespace Fungus
 
         protected virtual void Awake()
         {
+            if (!instance)
+            {
+                instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else if (instance != this)
+            {
+                Destroy(gameObject);
+                return;
+            }
             Reset();
             AudioSource[] audioSources = GetComponents<AudioSource>();
             audioSourceMusic = audioSources[0];
