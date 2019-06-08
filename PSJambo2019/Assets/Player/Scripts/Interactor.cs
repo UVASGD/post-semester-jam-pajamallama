@@ -7,6 +7,8 @@ public class Interactor : MonoBehaviour
     public float interact_distance = 1;
     LayerMask lm;
 
+    public Item pocket_item;
+
     public void Start()
     {
         lm = ~LayerMask.GetMask("Player");

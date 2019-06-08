@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class Slot : Interactable
 {
+    public Item item;
     // Start is called before the first frame update
-    protected virtual void Start()
+    void Start()
     {
         
     }
 
-    public virtual void Interact(Transform t)
+    // Update is called once per frame
+    void Update()
     {
-
+        
     }
 }
