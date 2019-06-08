@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
-    public float interact_distance = 1;
+    float interact_distance = 10;
     LayerMask lm;
 
     public Item p_item;
@@ -12,12 +12,6 @@ public class Interactor : MonoBehaviour
     public void Start()
     {
         lm = ~LayerMask.GetMask("Player");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.DrawRay(transform.position, transform.forward * interact_distance);
     }
 
     public void Interact()

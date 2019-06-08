@@ -7,7 +7,7 @@ public class Slot : MonoBehaviour
     public Item item;
     Collider c;
 
-    public virtual void Start()
+    public virtual void Awake()
     {
         item = GetComponentInChildren<Item>();
         c = GetComponent<Collider>();
