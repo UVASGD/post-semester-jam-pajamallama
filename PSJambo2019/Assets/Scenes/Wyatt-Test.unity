@@ -212,6 +212,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &993188043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5992171149598053157, guid: 70861506f301bd941ab39f1235188048,
+    type: 3}
+  m_PrefabInstance: {fileID: 1160398356291145859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1514765097
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +309,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &1619777080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9148582650308692284, guid: 70861506f301bd941ab39f1235188048,
+    type: 3}
+  m_PrefabInstance: {fileID: 1160398356291145859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1800624944 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8359551775292092577, guid: 70861506f301bd941ab39f1235188048,
@@ -325,6 +337,49 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &1800624950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800624944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ad7bf02f786f54eb9d12ffe505cdfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1800624951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800624944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adceec935cdb8ad4b9acac7934315712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 1619777080}
+  segments:
+  - firstTransform: {fileID: 993188043}
+    lastTransform: {fileID: 2110686264}
+    thresholdAngleDifference: 0
+    bendingMultiplier: 0.6
+    maxAngleDifference: 30
+    maxBendingAngle: 80
+    responsiveness: 5
+  nonAffectedJoints: []
+  defaultTarget: {fileID: 0}
+  effect: 1
+  overrideAnimation: 0
+--- !u!4 &2110686264 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3341522183747511365, guid: 70861506f301bd941ab39f1235188048,
+    type: 3}
+  m_PrefabInstance: {fileID: 1160398356291145859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &959360993543154558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -509,6 +564,16 @@ PrefabInstance:
     - target: {fileID: 514242800699578416, guid: 70861506f301bd941ab39f1235188048,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229716541784666056, guid: 70861506f301bd941ab39f1235188048,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229716541784666056, guid: 70861506f301bd941ab39f1235188048,
+        type: 3}
+      propertyPath: m_UpdateMode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -39,6 +39,7 @@ namespace AroundTheBend {
 
         private GameObject targetObj;
         public GameObject defaultTarget;
+        float timer;
 
         private Vector3 TargetPos { get { return targetObj.transform.position; } }
         public float effect = 1;
@@ -84,8 +85,9 @@ namespace AroundTheBend {
             }
         }
 
-        public void BeginLookAt(GameObject go) {
+        public void BeginLookAt(GameObject go, float time = 10f) {
             targetObj = go;
+            timer = time;
         }
 
         public void StopLookAt () {
@@ -93,8 +95,10 @@ namespace AroundTheBend {
         }
 
         void LateUpdate () {
-            if (Time.deltaTime == 0)
+            if (Time.deltaTime == 0 || timer <= 0)
                 return;
+
+            timer -= Time.deltaTime;
 
             // Remember initial directions of joints that should not be affected
             Vector3[] jointDirections = new Vector3[nonAffectedJoints.Length];
