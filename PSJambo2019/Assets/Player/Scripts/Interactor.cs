@@ -7,7 +7,7 @@ public class Interactor : MonoBehaviour
     public float interact_distance = 1;
     LayerMask lm;
 
-    public Item pocket_item;
+    public Item p_item;
 
     public void Start()
     {
@@ -20,19 +20,32 @@ public class Interactor : MonoBehaviour
         Debug.DrawRay(transform.position, transform.forward * interact_distance);
     }
 
-    public void Interact(Interactable i = null)
+    public void Interact()
     {
-        if (i)
+        QueryTriggerInteraction qti = (p_item) ? QueryTriggerInteraction.Collide : QueryTriggerInteraction.Ignore;
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, interact_distance, lm, qti))
         {
-            i.Interact(transform);
-        }
-        else if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, interact_distance, lm))
-        {
-            i = hit.transform.GetComponent<Interactable>();
-            if (i)
+            if (hit.transform.GetComponent<Slot>())
             {
-                i.Interact(transform);
+                Slot slot = hit.transform.GetComponent<Slot>();
+                p_item = slot.Swap(p_item);
+                if (p_item) p_item.Collect(transform);
+                return;
+            }
+            else if (hit.transform.GetComponent<Item>())
+            {
+                Item item = hit.transform.GetComponent<Item>();
+                if (p_item) p_item.Drop();
+                p_item = item.Collect(transform);
+                return;
+            }
+            else if (hit.transform.GetComponent<Interactable>())
+            {
+                hit.transform.GetComponent<Interactable>().Interact(transform);
+                return;
             }
         }
+
+        if (p_item) p_item = p_item.Drop();
     }
 }

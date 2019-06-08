@@ -10,7 +10,7 @@ public class Interactable : MonoBehaviour
         
     }
 
-    public virtual void Interact(Transform t, bool active = false)
+    public virtual void Interact(Transform t)
     {
 
     }
