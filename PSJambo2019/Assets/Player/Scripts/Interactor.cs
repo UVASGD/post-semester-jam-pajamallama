@@ -26,12 +26,9 @@ public class Interactor : MonoBehaviour
         }
         else if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, interact_distance, lm))
         {
-            print("a");
-            print(hit.transform);
             i = hit.transform.GetComponent<Interactable>();
             if (i)
             {
-                print("Gotem");
                 i.Interact(transform);
             }
         }
