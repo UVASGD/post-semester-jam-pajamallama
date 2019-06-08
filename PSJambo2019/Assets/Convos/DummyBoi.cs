@@ -45,6 +45,7 @@ public class DummyBoi : MonoBehaviour
     public void Leave()
     {
         Debug.Log("LEAVE");
+        flowchart.ExecuteBlock("s-RESET-s");
     }
 
     public void Finish()

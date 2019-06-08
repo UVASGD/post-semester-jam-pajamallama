@@ -28,7 +28,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3046081638597329075}
+  - {fileID: 2958743369747127576}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996608d92212e9448fcb0ac8c29ad26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowchart: {fileID: 3046081638597329074}
---- !u!1001 &5376148610608786069
+  flowchart: {fileID: 2958743369747127577}
+--- !u!1001 &5319209496373180222
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -85,17 +85,17 @@ PrefabInstance:
     - target: {fileID: 6980071112682301990, guid: f3a1048666317984c95ce9df52d82f20,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6980071112682301990, guid: f3a1048666317984c95ce9df52d82f20,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6980071112682301990, guid: f3a1048666317984c95ce9df52d82f20,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6980071112682301990, guid: f3a1048666317984c95ce9df52d82f20,
         type: 3}
@@ -122,11 +122,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6980071112682301991, guid: f3a1048666317984c95ce9df52d82f20,
-        type: 3}
-      propertyPath: selectedCommands.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5855083141858094626, guid: f3a1048666317984c95ce9df52d82f20,
         type: 3}
       propertyPath: targetObject
@@ -139,17 +134,17 @@ PrefabInstance:
       objectReference: {fileID: 5376148610265682303}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a1048666317984c95ce9df52d82f20, type: 3}
---- !u!4 &3046081638597329075 stripped
+--- !u!4 &2958743369747127576 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6980071112682301990, guid: f3a1048666317984c95ce9df52d82f20,
     type: 3}
-  m_PrefabInstance: {fileID: 5376148610608786069}
+  m_PrefabInstance: {fileID: 5319209496373180222}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3046081638597329074 stripped
+--- !u!114 &2958743369747127577 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6980071112682301991, guid: f3a1048666317984c95ce9df52d82f20,
     type: 3}
-  m_PrefabInstance: {fileID: 5376148610608786069}
+  m_PrefabInstance: {fileID: 5319209496373180222}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
