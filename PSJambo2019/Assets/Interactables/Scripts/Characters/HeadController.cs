@@ -95,8 +95,14 @@ namespace AroundTheBend {
         }
 
         void LateUpdate () {
-            if (Time.deltaTime == 0 || timer <= 0)
+            if (Time.deltaTime == 0)
                 return;
+
+            if (timer <= 0)
+            {
+                timer = 0;
+                StopLookAt();
+            }
 
             timer -= Time.deltaTime;
 

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - Ground
+  - GasStation
+  - Hand
   layers:
   - Default
   - TransparentFX

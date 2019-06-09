@@ -2,17 +2,11 @@
 using UnityEngine;
 public enum Tag
 {
-    Player,
-    Enemy,
-    Damage,
-    SuperDamage,
-    Water,
-    Attacking,
-    Dead,
-    Marine,
-    Dashing,
-    Invincible,
-    DeleteOnMenu,
+    Default,
+    SpiderEyes,
+    Car,
+    ToyCar,
+    ToastChee,
 }
 
 public class TagHandler : MonoBehaviour
