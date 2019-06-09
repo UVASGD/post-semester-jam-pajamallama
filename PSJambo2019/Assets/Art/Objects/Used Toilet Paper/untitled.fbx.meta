@@ -3,7 +3,12 @@ guid: 3414764c9a354419ba74b73004ffbefe
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lube_mat
+    second: {fileID: 2100000, guid: b5097969314914f329218e55fe0e8976, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
