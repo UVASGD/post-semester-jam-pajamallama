@@ -5,7 +5,6 @@ using UnityEngine;
 public class Wolfie : Character
 {
     protected Vector3 target;
-
     public Tag item_tag = Tag.Default;
 
     protected override void Start()

@@ -22,6 +22,9 @@ public class Character : MonoBehaviour
 
     protected float timer;
 
+    int forward_hash;
+    float speed_factor = 0.1f;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -32,11 +35,14 @@ public class Character : MonoBehaviour
         rb = GetComponentInChildren<Rigidbody>();
         GetComponentInChildren<Interactable>().InteractEvent += TurnTo;
         if (!hand) hand = transform;
+        forward_hash = Animator.StringToHash("Forward");
     }
 
     // Update is called once per frame
     void Update()
     {
+        anim.SetFloat(forward_hash, agent.velocity.magnitude * speed_factor);
+
         if (timer <= 0)
             behavior?.Invoke();
         else

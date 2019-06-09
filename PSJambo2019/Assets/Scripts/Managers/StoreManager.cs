@@ -15,7 +15,7 @@ public class StoreManager : MonoBehaviour {
 
     public static StoreManager instance;
 
-    public static float store_radius = 20f;
+    public static float store_radius = 50f;
 
 
     private void Awake() {
@@ -33,7 +33,7 @@ public class StoreManager : MonoBehaviour {
     public Item find_item_with_tag(Tag tag) {
         Slot[] slots = FindObjectsOfType<Slot>();
         foreach (Slot slot in slots) {
-            if (!slot.isBackRoom && slot.item && slot.item.gameObject.GetComponent<TagHandler>().HasTag(tag)) {
+            if (!slot.isBackRoom && slot.item && slot.item.GetComponent<TagHandler>().HasTag(tag)) {
                 return slot.item;
             }
         }
@@ -44,7 +44,7 @@ public class StoreManager : MonoBehaviour {
     public Item find_item_with_name(string name) {
         Slot[] slots = FindObjectsOfType<Slot>();
         foreach (Slot slot in slots) {
-            if (!slot.isBackRoom && slot.item && slot.item.gameObject.GetComponent<Item>().name == name) {
+            if (!slot.isBackRoom && slot.item && slot.item.GetComponent<Item>().name == name) {
                 return slot.item;
             }
         }
