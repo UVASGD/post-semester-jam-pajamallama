@@ -6,7 +6,7 @@ using AroundTheBend;
 
 public delegate void Behavior();
 
-public class Character : MonoBehaviour
+public class Character : MonoBehaviour, IPausable
 {
     protected Animator anim;
     protected NavMeshAgent agent;
@@ -14,9 +14,16 @@ public class Character : MonoBehaviour
     protected Rigidbody rb;
     protected Rotator rotator;
 
+    public Transform hand;
+
     public Behavior behavior;
 
     float turn_speed = 5f;
+
+    protected float timer;
+
+    int forward_hash;
+    float speed_factor = 0.1f;
 
     // Start is called before the first frame update
     protected virtual void Start()
@@ -27,16 +34,24 @@ public class Character : MonoBehaviour
         hc = GetComponentInChildren<HeadController>();
         rb = GetComponentInChildren<Rigidbody>();
         GetComponentInChildren<Interactable>().InteractEvent += TurnTo;
+        if (!hand) hand = transform;
+        forward_hash = Animator.StringToHash("Forward");
     }
 
     // Update is called once per frame
     void Update()
     {
-        behavior?.Invoke();
+        anim.SetFloat(forward_hash, agent.velocity.magnitude * speed_factor);
+
+        if (timer <= 0)
+            behavior?.Invoke();
+        else
+            timer -= Time.deltaTime;
     }
 
     protected void Stop()
     {
+        timer = 0;
         agent.isStopped = true;
         behavior = null;
     }

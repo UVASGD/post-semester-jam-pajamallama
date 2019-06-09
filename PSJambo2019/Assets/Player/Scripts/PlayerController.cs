@@ -2,8 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public delegate void InputEvent();
+
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
+
+    private void Awake()
+    {
+        if (!instance)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+            Destroy(gameObject);
+    }
+
+    public InputEvent Pause;
+
     Interactor interactor;
     // Start is called before the first frame update
     void Start()
@@ -18,5 +35,8 @@ public class PlayerController : MonoBehaviour
         {
             interactor.Interact();
         }
+
+        if (Input.GetButtonDown("Pause"))
+            Pause.Invoke();
     }
 }

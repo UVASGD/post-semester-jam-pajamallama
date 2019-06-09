@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Fire
   - Ground
+  - GasStation
+  - Hand
+  - Counter
+  - WaitingArea
   layers:
   - Default
   - TransparentFX

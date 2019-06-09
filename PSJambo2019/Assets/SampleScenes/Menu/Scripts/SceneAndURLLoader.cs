@@ -1,15 +1,16 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using ShitMenu;
 
 public class SceneAndURLLoader : MonoBehaviour
 {
-    private PauseMenu m_PauseMenu;
+    private ShitMenu.StandardPauseMenu m_PauseMenu;
 
 
     private void Awake ()
     {
-        m_PauseMenu = GetComponentInChildren <PauseMenu> ();
+        m_PauseMenu = GetComponentInChildren <ShitMenu.StandardPauseMenu> ();
     }
 
 

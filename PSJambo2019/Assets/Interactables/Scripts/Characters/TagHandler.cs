@@ -2,17 +2,11 @@
 using UnityEngine;
 public enum Tag
 {
-    Player,
-    Enemy,
-    Damage,
-    SuperDamage,
-    Water,
-    Attacking,
-    Dead,
-    Marine,
-    Dashing,
-    Invincible,
-    DeleteOnMenu,
+    Default,
+    SpiderEyes,
+    Car,
+    ToyCar,
+    ToastChee,
 }
 
 public class TagHandler : MonoBehaviour
@@ -25,6 +19,11 @@ public class TagHandler : MonoBehaviour
         tagList.Add(tag);
     }
 
+    public void Add(List<Tag> tagList)
+    {
+        this.tagList.AddRange(tagList);
+    }
+
     public void Remove(Tag tag)
     {
         tagList.Remove(tag);
@@ -33,6 +32,10 @@ public class TagHandler : MonoBehaviour
     public void RemoveAll(Tag tag)
     {
         tagList.RemoveAll(t => t == tag);
+    }
+
+    public void Clear() {
+        tagList.Clear();
     }
 
     public bool HasTag(Tag tag)
