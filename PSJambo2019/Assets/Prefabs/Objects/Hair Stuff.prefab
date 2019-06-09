@@ -1,19 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!64 &1223540153082008061
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8756574730503728267}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 2534964839176971238, guid: bd9878a6d218840158c68bbacb7aa7af, type: 3}
 --- !u!1 &7023212478761818992
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,6 +31,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1223540153082008061
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8756574730503728267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 2534964839176971238, guid: bd9878a6d218840158c68bbacb7aa7af, type: 3}
 --- !u!1001 &766868974172992898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: bd9878a6d218840158c68bbacb7aa7af,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: bd9878a6d218840158c68bbacb7aa7af,
         type: 3}
@@ -111,6 +111,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: bd9878a6d218840158c68bbacb7aa7af,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 118.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: bd9878a6d218840158c68bbacb7aa7af,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 118.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: bd9878a6d218840158c68bbacb7aa7af,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 118.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd9878a6d218840158c68bbacb7aa7af, type: 3}
