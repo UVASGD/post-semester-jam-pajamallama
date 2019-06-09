@@ -9,6 +9,7 @@ TagManager:
   - GasStation
   - Hand
   - Counter
+  - WaitingArea
   layers:
   - Default
   - TransparentFX
