@@ -1080,6 +1080,7 @@ GameObject:
   - component: {fileID: 3356704704120568861}
   - component: {fileID: 8521992734418887541}
   - component: {fileID: 316830245}
+  - component: {fileID: 6089571917092209869}
   m_Layer: 0
   m_Name: Chad_stride
   m_TagString: Untagged
@@ -1152,6 +1153,42 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!114 &6089571917092209869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8521992734418887540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adceec935cdb8ad4b9acac7934315712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 0}
+  segments:
+  - firstTransform: {fileID: 8353627023396326965}
+    lastTransform: {fileID: 6679499202279650320}
+    thresholdAngleDifference: 30
+    bendingMultiplier: 0.6
+    maxAngleDifference: 90
+    maxBendingAngle: 40
+    responsiveness: 2.5
+  - firstTransform: {fileID: 5868010923538039024}
+    lastTransform: {fileID: 3177381386023712656}
+    thresholdAngleDifference: 0
+    bendingMultiplier: 0.4
+    maxAngleDifference: 20.35
+    maxBendingAngle: 30.9
+    responsiveness: 3.88
+  nonAffectedJoints:
+  - joint: {fileID: 1590215141372414082}
+    effect: 0.3
+  - joint: {fileID: 1894716511961773159}
+    effect: 0.3
+  defaultTarget: {fileID: 0}
+  effect: 1
+  overrideAnimation: 0
 --- !u!1 &8538127778844137233
 GameObject:
   m_ObjectHideFlags: 0
