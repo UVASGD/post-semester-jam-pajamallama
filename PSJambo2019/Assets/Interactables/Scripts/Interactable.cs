@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public delegate void InteractDel(Transform t);
+
 public class Interactable : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public virtual void Start()
-    {
-        
-    }
+    public InteractDel InteractEvent;
 
     public virtual void Interact(Transform t)
     {
-
+        InteractEvent?.Invoke(t);
     }
 }

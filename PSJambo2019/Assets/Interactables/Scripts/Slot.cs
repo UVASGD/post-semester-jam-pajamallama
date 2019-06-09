@@ -5,9 +5,10 @@ using UnityEngine;
 public class Slot : MonoBehaviour
 {
     public Item item;
+    public bool isBackRoom = false;
     Collider c;
 
-    public virtual void Start()
+    public virtual void Awake()
     {
         item = GetComponentInChildren<Item>();
         c = GetComponent<Collider>();
