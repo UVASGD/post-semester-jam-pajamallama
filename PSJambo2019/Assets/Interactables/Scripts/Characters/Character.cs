@@ -43,10 +43,7 @@ public class Character : MonoBehaviour, IPausable
     {
         anim.SetFloat(forward_hash, agent.velocity.magnitude * speed_factor);
 
-        if (timer <= 0)
-            behavior?.Invoke();
-        else
-            timer -= Time.deltaTime;
+        behavior?.Invoke();
     }
 
     protected void Stop()
