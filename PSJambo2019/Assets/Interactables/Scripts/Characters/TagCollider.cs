@@ -11,7 +11,6 @@ public class TagCollider : MonoBehaviour
     private void Start()
     {
         interact_distance = GetComponent<CapsuleCollider>().radius;
-
     }
 
     public void OnTriggerEnter(Collider other)
