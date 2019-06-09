@@ -18,6 +18,11 @@ public class StoreManager : MonoBehaviour {
     public static float store_radius = 50f;
 
 
+    Vector3 counterLocation;
+
+    public BoxCollider waitingSpace;
+
+
     private void Awake() {
         if (instance == null) {
             instance = this;
@@ -28,6 +33,28 @@ public class StoreManager : MonoBehaviour {
         try { store_radius = GameObject.FindGameObjectWithTag("GasStation").
                 GetComponent<Renderer>().bounds.size.magnitude; }
         catch (System.Exception e) { }
+    }
+
+    private void Start() {
+        counterLocation = GameObject.FindGameObjectWithTag("Counter").transform.position;
+    }
+
+    public Vector3 GetCounterLocation() {
+        return counterLocation;
+    }
+
+    public Vector3 GetWaitingLocation() {
+        Vector3 randomSpot = new Vector3(
+            Random.Range(waitingSpace.bounds.min.x, waitingSpace.bounds.max.x),
+            waitingSpace.bounds.min.y,
+            Random.Range(waitingSpace.bounds.min.z, waitingSpace.bounds.max.z));
+        NavMeshHit hit;
+        Vector3 finalPosition = randomSpot;
+        if (NavMesh.SamplePosition(randomSpot, out hit, waitingSpace.bounds.extents.magnitude, 1))
+        {
+            finalPosition = hit.position;
+        }
+        return finalPosition;
     }
 
     public Item find_item_with_tag(Tag tag) {
