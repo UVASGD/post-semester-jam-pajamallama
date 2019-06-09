@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
 
-public class DummyBoi : MonoBehaviour {
+public class ConvoHandler : MonoBehaviour {
 
     public Flowchart flowchart;
 
