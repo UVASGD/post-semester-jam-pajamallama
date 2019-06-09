@@ -32,6 +32,8 @@ public class Wolfie : Character
     {
         target = StoreManager.instance.RandomNavmeshLocation(StoreManager.store_radius, rb.transform.position);
         agent.SetDestination(target);
+        timer = 30f;
+        behavior = GoToCounter;
     }
 
     void FoundItem(Transform t)

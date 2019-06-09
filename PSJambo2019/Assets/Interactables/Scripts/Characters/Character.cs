@@ -6,7 +6,7 @@ using AroundTheBend;
 
 public delegate void Behavior();
 
-public class Character : MonoBehaviour
+public class Character : MonoBehaviour, IPausable
 {
     protected Animator anim;
     protected NavMeshAgent agent;
