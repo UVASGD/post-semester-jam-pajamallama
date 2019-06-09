@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using AroundTheBend;
 
-public delegate void Behavior();
+public delegate bool Behavior();
 
 public class Character : MonoBehaviour, IPausable
 {
@@ -16,11 +16,7 @@ public class Character : MonoBehaviour, IPausable
 
     public Transform hand;
 
-    public Behavior behavior;
-
     float turn_speed = 5f;
-
-    protected float timer;
 
     int forward_hash;
     float speed_factor = 0.1f;
@@ -43,17 +39,11 @@ public class Character : MonoBehaviour, IPausable
     {
         anim.SetFloat(forward_hash, agent.velocity.magnitude * speed_factor);
 
-        if (timer <= 0)
-            behavior?.Invoke();
-        else
-            timer -= Time.deltaTime;
     }
 
     protected void Stop()
     {
-        timer = 0;
         agent.isStopped = true;
-        behavior = null;
     }
 
     protected void TurnTo(Transform t)

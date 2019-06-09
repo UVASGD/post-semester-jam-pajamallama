@@ -2,11 +2,17 @@
 using UnityEngine;
 public enum Tag
 {
-    Default,
-    SpiderEyes,
-    Car,
-    ToyCar,
-    ToastChee,
+	Default,
+	Bananas,
+	Beer,
+	CheeseCrack,
+	Chips,
+	HairStuff,
+	Milk,
+	Soda,
+	Soup,
+	SpiderEyeLube,
+	UsedToiletPaper,
 }
 
 public class TagHandler : MonoBehaviour

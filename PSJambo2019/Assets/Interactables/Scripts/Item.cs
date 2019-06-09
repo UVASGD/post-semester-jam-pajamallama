@@ -9,7 +9,6 @@ public class Item : MonoBehaviour {
     Transform holder;
 
     public string itemname = "Default Item Name";
-    public ItemType type = ItemType.Default;
 
     public virtual void Start() {
         rb = GetComponent<Rigidbody>();
