@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &510254604584673404
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7688475429835713348}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_Name
+      value: spiderEyeLube
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.040000916
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.38000014
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.09999848
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 99.99997
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 198.93239
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: f5838b00fd02c44be8edd0f1a19200a6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c387f5a3b8fd949a4b4c204ec1f9b63b, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f5838b00fd02c44be8edd0f1a19200a6, type: 3}
+--- !u!1001 &8187791224735386553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8854297158139624412, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Name
+      value: Spider Eye Lube
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139624413, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139624413, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139624413, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546777378394270715, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: itemname
+      value: Spider Eye Lube
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546777378394270715, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521690777940442896, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6bdf799d28dd9cf4f9b39442888222c6, type: 3}
+--- !u!4 &7688475429835713348 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8187791224735386553}
+  m_PrefabAsset: {fileID: 0}
