@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - GasStation
   - Hand
+  - Counter
   layers:
   - Default
   - TransparentFX

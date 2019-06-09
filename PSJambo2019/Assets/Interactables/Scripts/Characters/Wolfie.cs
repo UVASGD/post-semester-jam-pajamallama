@@ -13,13 +13,23 @@ public class Wolfie : Character
         TagCollider tc = GetComponentInChildren<TagCollider>();
         tc.item_tag = item_tag;
         tc.TagEvent += FoundItem;
-        Wander(); //get rid of this
+        FindItem();
+    }
+
+    void FindItem()
+    {
+        Item i = StoreManager.instance.find_item_with_tag(item_tag);
+        if (i)
+        {
+            target = i.transform.position;
+            agent.SetDestination(target);
+            return;
+        }
+        Wander();
     }
 
     void Wander()
     {
-        print(rb);
-        print(StoreManager.instance);
         target = StoreManager.instance.RandomNavmeshLocation(StoreManager.store_radius, rb.transform.position);
         agent.SetDestination(target);
     }
@@ -30,10 +40,15 @@ public class Wolfie : Character
         TurnTo(t);
         t.GetComponent<Item>().Collect(hand, true);
         timer = 5f;
+        target = StoreManager.instance.GetWaitingLocation();
+        behavior = GoToCounter;
     }
 
     void GoToCounter()
     {
-
+        if (agent.remainingDistance <= agent.stoppingDistance)
+        {
+            Stop();
+        }
     }
 }

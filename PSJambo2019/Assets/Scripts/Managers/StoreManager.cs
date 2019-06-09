@@ -36,7 +36,16 @@ public class StoreManager : MonoBehaviour {
     }
 
     private void Start() {
-        counterLocation = GameObject.FindGameObjectWithTag("Counter").transform.position;
+        try
+        {
+            counterLocation = GameObject.FindGameObjectWithTag("Counter").transform.position;
+        }
+        catch (System.Exception e) { }
+        try
+        {
+            waitingSpace = GameObject.FindGameObjectWithTag("WaitingArea").GetComponent<BoxCollider>();
+        }
+        catch (System.Exception e) { }
     }
 
     public Vector3 GetCounterLocation() {
@@ -44,6 +53,8 @@ public class StoreManager : MonoBehaviour {
     }
 
     public Vector3 GetWaitingLocation() {
+        if (!waitingSpace)
+            return Vector3.zero;
         Vector3 randomSpot = new Vector3(
             Random.Range(waitingSpace.bounds.min.x, waitingSpace.bounds.max.x),
             waitingSpace.bounds.min.y,
