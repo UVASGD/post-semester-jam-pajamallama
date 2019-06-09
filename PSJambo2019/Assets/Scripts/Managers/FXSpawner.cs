@@ -9,7 +9,7 @@ public class FXSpawner : MonoBehaviour
 
     #region effects
     //Add sound effect vars here
-
+    public GameObject money_fx;
 
     #endregion
 
