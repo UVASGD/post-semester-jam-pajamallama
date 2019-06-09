@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 8854297158139623458}
   - component: {fileID: 8854297158139624413}
   - component: {fileID: 385748481}
+  - component: {fileID: -5431379939890277007}
   m_Layer: 0
   m_Name: Slot
   m_TagString: Untagged
@@ -73,6 +74,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 7546777378394270715}
   isBackRoom: 0
+--- !u!114 &-5431379939890277007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8854297158139624412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68fa32d43444621498245cff15dfad7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagList: 
 --- !u!1001 &5727835589798652500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80,11 +94,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8854297158139623458}
     m_Modifications:
-    - target: {fileID: 4083098774838928656, guid: 22ca9f1b3ac834c2ca3a4c43931453f3,
-        type: 3}
-      propertyPath: m_Name
-      value: Cube
-      objectReference: {fileID: 0}
     - target: {fileID: 6084168521188444841, guid: 22ca9f1b3ac834c2ca3a4c43931453f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -139,6 +148,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083098774838928656, guid: 22ca9f1b3ac834c2ca3a4c43931453f3,
+        type: 3}
+      propertyPath: m_Name
+      value: Cube
       objectReference: {fileID: 0}
     - target: {fileID: 2819031223185265988, guid: 22ca9f1b3ac834c2ca3a4c43931453f3,
         type: 3}
