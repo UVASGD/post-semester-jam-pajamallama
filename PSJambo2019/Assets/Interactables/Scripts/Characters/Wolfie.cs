@@ -38,6 +38,7 @@ public class Wolfie : Character
 
     void FoundItem(Transform t)
     {
+        Debug.Log("found!");
         Stop();
         TurnTo(t);
         t.GetComponent<Item>().Collect(hand, true);
