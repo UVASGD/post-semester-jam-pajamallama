@@ -13,6 +13,7 @@ public class Slot : MonoBehaviour
     {
         th = GetComponent<TagHandler>();
         item = GetComponentInChildren<Item>();
+        th.Add(item.GetComponent<TagHandler>().tagList);
         c = GetComponent<Collider>();
         if (!item && c) c.isTrigger = true;
     }

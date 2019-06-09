@@ -1,0 +1,221 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1593311164471639469
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8854297158139624412, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Name
+      value: Cheese Crack
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139624413, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139624413, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854297158139624413, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546777378394270715, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: itemname
+      value: Cheese Crack
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7521690777940442896, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6bdf799d28dd9cf4f9b39442888222c6, type: 3}
+--- !u!4 &940837909454003536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1593311164471639469}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3820622499022719046
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 940837909454003536}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_Name
+      value: cheese_crack
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.43999958
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.069999695
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 33.98617
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 33.986145
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 68.65334
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 248acc789427744118b0c54bd4263290,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ac52eaf455fb4105883051cef915c28, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 248acc789427744118b0c54bd4263290, type: 3}
