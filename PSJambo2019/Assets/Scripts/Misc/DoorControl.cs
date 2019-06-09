@@ -5,6 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class DoorControl : MonoBehaviour {
 
+    [Tooltip("What objects are allowed to open the door")]
+    public string TagMask = "Player";
+
     private List<GameObject> people;
     private Animator anim;
 
@@ -20,7 +23,8 @@ public class DoorControl : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
-        if (!people.Contains(other.gameObject))
+        // Open the door if requirements met
+        if (!people.Contains(other.gameObject) && other.CompareTag(TagMask))
             people.Add(other.gameObject);
     }
 
