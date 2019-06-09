@@ -1,141 +1,56 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1593311164471639469
-PrefabInstance:
+--- !u!64 &8395738799349153452
+MeshCollider:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8854297158139624412, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_Name
-      value: Cheese Crack
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -60
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139623458, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139624413, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139624413, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854297158139624413, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7546777378394270715, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: itemname
-      value: Cheese Crack
-      objectReference: {fileID: 0}
-    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7521690777940442896, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6bdf799d28dd9cf4f9b39442888222c6, type: 3}
---- !u!4 &940837909454003536 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1950642582384337149, guid: 6bdf799d28dd9cf4f9b39442888222c6,
-    type: 3}
-  m_PrefabInstance: {fileID: 1593311164471639469}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3820622499022719046
+  m_GameObject: {fileID: 550084443111745446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: -5495902117074765545, guid: 248acc789427744118b0c54bd4263290, type: 3}
+--- !u!1 &8395738799392688055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8395738799392688054}
+  m_Layer: 0
+  m_Name: Cheese Crack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8395738799392688054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8395738799392688055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3600930517353108917}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8395738799349153455
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 940837909454003536}
+    m_TransformParent: {fileID: 8395738799392688054}
     m_Modifications:
     - target: {fileID: -927199367670048503, guid: 248acc789427744118b0c54bd4263290,
         type: 3}
@@ -145,22 +60,22 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.43999958
+      value: 1.06
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.069999695
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.70710695
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
         type: 3}
@@ -185,7 +100,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90.00001
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
         type: 3}
@@ -197,21 +112,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 33.98617
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 33.986145
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 68.65334
-      objectReference: {fileID: 0}
     - target: {fileID: -1504981713932161579, guid: 248acc789427744118b0c54bd4263290,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -219,3 +119,15 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 9ac52eaf455fb4105883051cef915c28, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 248acc789427744118b0c54bd4263290, type: 3}
+--- !u!1 &550084443111745446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 248acc789427744118b0c54bd4263290,
+    type: 3}
+  m_PrefabInstance: {fileID: 8395738799349153455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3600930517353108917 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 248acc789427744118b0c54bd4263290,
+    type: 3}
+  m_PrefabInstance: {fileID: 8395738799349153455}
+  m_PrefabAsset: {fileID: 0}
