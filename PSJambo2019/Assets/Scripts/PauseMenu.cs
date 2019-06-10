@@ -30,6 +30,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        Pauser.instance.Pause(false);
         SetUIActive(false);
         GamePaused = false;
         Time.timeScale = 1f;
@@ -38,6 +39,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        Pauser.instance.Pause(true);
         SetUIActive(true);
         GamePaused = true;
         Time.timeScale = 0f;

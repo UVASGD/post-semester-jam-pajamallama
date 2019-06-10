@@ -10,7 +10,7 @@ public struct Tuple {
 
 public class ItemDictionary : MonoBehaviour {
 	[SerializeField] private List<Tuple> items;
-	private Dictionary<Tag, GameObject> itemDictionary;
+	private Dictionary<Tag, GameObject> itemDictionary = new Dictionary<Tag, GameObject>();
 
 	private void Awake () {
 		FillDictionary();

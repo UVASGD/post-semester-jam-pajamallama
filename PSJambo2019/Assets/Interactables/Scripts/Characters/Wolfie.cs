@@ -15,25 +15,40 @@ public class Wolfie : Character
         tc.item_tag = item_tag;
         tc.TagEvent += FoundItem;
         FindItem();
+        
     }
 
-    void FindItem()
+    bool FindItem()
     {
         Item i = StoreManager.instance.find_item_with_tag(item_tag);
         if (i)
         {
             target = i.transform.position;
 
-            return;
+            return true;
         }
-        Wander();
+
+        return false;
     }
 
-    void Wander()
+    bool Wander()
     {
         target = StoreManager.instance.RandomNavmeshLocation(StoreManager.store_radius, rb.transform.position);
+        return true;
+    }
 
-        behavior = GoToDestination;
+    void GoToDestination()
+    {
+        if (agent.remainingDistance <= agent.stoppingDistance)
+        {
+            Stop();
+        }
+    }
+
+    bool GoToCounter()
+    {
+        target = StoreManager.instance.GetWaitingLocation();
+        return true;
     }
 
     void FoundItem(Transform t)
@@ -48,16 +63,8 @@ public class Wolfie : Character
         {
             t.GetComponent<Item>().Collect(hand, true);
         }
-
-        target = StoreManager.instance.GetWaitingLocation();
-        behavior = GoToDestination;
     }
 
-    void GoToDestination()
-    {
-        if (agent.remainingDistance <= agent.stoppingDistance)
-        {
-            Stop();
-        }
-    }
+
+
 }
