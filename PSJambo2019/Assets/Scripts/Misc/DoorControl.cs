@@ -8,7 +8,7 @@ public class DoorControl : MonoBehaviour {
     [Tooltip("What objects are allowed to open the door")]
     public string TagMask = "Player";
 
-    private List<GameObject> people;
+    public List<GameObject> people;
     private Animator anim;
 
     // Start is called before the first frame update
@@ -23,8 +23,11 @@ public class DoorControl : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
+            print(other.gameObject);
         // Open the door if requirements met
-        if (!people.Contains(other.gameObject) && other.CompareTag(TagMask))
+        if (!people.Contains(other.gameObject) && (string.IsNullOrEmpty(TagMask)
+            || (string.IsNullOrEmpty(TagMask) && other.CompareTag(TagMask))))
+            print("added!");
             people.Add(other.gameObject);
     }
 
