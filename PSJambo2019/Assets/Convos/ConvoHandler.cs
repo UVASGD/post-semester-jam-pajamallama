@@ -17,7 +17,7 @@ public class ConvoHandler : MonoBehaviour {
 
     }
 
-    public bool HasItem(ItemType _item) {
+    public bool HasItem(Tag _item) {
         return Random.value > 0.5f;
     }
 

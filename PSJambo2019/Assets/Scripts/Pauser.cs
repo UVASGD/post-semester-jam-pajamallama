@@ -17,8 +17,12 @@ public class Pauser : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void Pause()
+    public void Pause(bool paused)
     {
         pausables = new HashSet<IPausable>(FindObjectsOfType<MonoBehaviour>().OfType<IPausable>());
+        foreach (IPausable p in pausables)
+        {
+            ((MonoBehaviour)p).enabled = !paused;
+        }
     }
 }

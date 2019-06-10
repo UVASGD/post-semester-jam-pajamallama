@@ -3,13 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public enum ItemType {
-    Default,
-    SpiderEyes,
-    Car,
-    ToyCar,
-    ToastChee,
-}
+
 public class StoreManager : MonoBehaviour {
     //wyatt is holding me at gunpoint and this is the only way i can speak without him seeing
 
@@ -88,37 +82,6 @@ public class StoreManager : MonoBehaviour {
         }
 
         return null;
-    }
-
-    public Item findItemOfType(ItemType type) {
-        Slot[] slots = FindObjectsOfType<Slot>();
-        foreach (Slot slot in slots) {
-            if (!slot.isBackRoom && slot.item && slot.item.gameObject.GetComponent<Item>().type == type) {
-                return slot.item;
-            }
-        }
-        return null;
-    }
-
-    public int numberOfItem(ItemType type) {
-        int num = 0;
-        Slot[] slots = FindObjectsOfType<Slot>();
-        foreach (Slot slot in slots) {
-            if (!slot.isBackRoom && slot.item && slot.item.gameObject.GetComponent<Item>().type == type) {
-                num++;
-            }
-        }
-        return num;
-    }
-
-    public bool itemOnShelves(ItemType type) {
-        Slot[] slots = FindObjectsOfType<Slot>();
-        foreach (Slot slot in slots) {
-            if (!slot.isBackRoom && slot.item && slot.item.gameObject.GetComponent<Item>().type == type) {
-                return true;
-            }
-        }
-        return false;
     }
 
     public Vector3 RandomNavmeshLocation(float radius, Vector3 position) {
