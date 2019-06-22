@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2377381141157223269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 810232834688712032}
-  m_Layer: 0
-  m_Name: head focus
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &810232834688712032
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2377381141157223269}
-  m_LocalRotation: {x: -0.037133217, y: 0.017144043, z: -0.007668501, w: 0.9991338}
-  m_LocalPosition: {x: -0.06850465, y: 0.20659645, z: 1.0316218}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 7881926717270084852}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &139661161660538219
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -93,7 +63,7 @@ MonoBehaviour:
     effect: 0.3
   - joint: {fileID: 6571046245889380099}
     effect: 0.3
-  defaultTarget: {fileID: 2377381141157223269}
+  defaultTarget: {fileID: 0}
   effect: 1
   overrideAnimation: 0
 --- !u!1 &7976756051807233114
@@ -139,11 +109,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: workoutchik
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: bf66a7ef49ffae94181f4ee83dd63e9f,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 5444ab4c5735a034daded3f2fc055505, type: 2}
     - target: {fileID: -4216859302048453862, guid: bf66a7ef49ffae94181f4ee83dd63e9f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -214,6 +179,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.6082
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: bf66a7ef49ffae94181f4ee83dd63e9f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5444ab4c5735a034daded3f2fc055505, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf66a7ef49ffae94181f4ee83dd63e9f, type: 3}
 --- !u!1 &3980718224799275024 stripped
