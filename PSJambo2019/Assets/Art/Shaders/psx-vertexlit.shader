@@ -5,7 +5,7 @@ Shader "psx/vertexlit" {
 		_MainTex("Base (RGB)", 2D) = "white" {}
 	}
 		SubShader{
-			Tags { "RenderType" = "Opaque" }
+			Tags { "RenderType" = "Opaque" "LightMode" = "ForwardBase" }
 			LOD 200
 
 			Pass {
@@ -16,6 +16,9 @@ Shader "psx/vertexlit" {
 					#pragma fragment frag
 					#include "UnityCG.cginc"
 
+					#pragma multi_compile_fwdbase
+					#include "AutoLight.cginc"
+
 					struct v2f
 					{
 						fixed4 pos : SV_POSITION;
@@ -23,6 +26,7 @@ Shader "psx/vertexlit" {
 						half4 colorFog : COLOR1;
 						float2 uv_MainTex : TEXCOORD0;
 						half3 normal : TEXCOORD1;
+						LIGHTING_COORDS(2, 3)
 					};
 
 					float4 _MainTex_ST;
@@ -70,7 +74,9 @@ Shader "psx/vertexlit" {
 						{
 							o.pos.w = 0;
 						}
-
+						
+						// Shadows
+						TRANSFER_VERTEX_TO_FRAGMENT(o);
 						return o;
 					}
 
@@ -79,11 +85,14 @@ Shader "psx/vertexlit" {
 					float4 frag(v2f IN) : COLOR
 					{
 						half4 c = tex2D(_MainTex, IN.uv_MainTex / IN.normal.r)*IN.color;
+						float attenuation = LIGHT_ATTENUATION(IN);
 						half4 color = c*(IN.colorFog.a);
 						color.rgb += IN.colorFog.rgb*(1 - IN.colorFog.a);
-						return color;
+						return color * attenuation;
 					}
 				ENDCG
 			}
 	}
+	
+	Fallback "VertexLit"
 }
